@@ -1,0 +1,69 @@
+
+/* General Styling */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    width: 393px;
+    height: 59px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-shrink: 0;
+    background: transparent; /* Clear background */
+    position: sticky;
+    top: 0; /* Sticks to the top of the page */
+    z-index: 1000; /* Ensures it stays above other content */
+    background-color: var(--primitives-color-neutral-100); /* Match background */
+    padding: 10px 20px;
+}
+
+/* Dynamic Island */
+.dynamic-island {
+    width: 100px;
+    height: 30px;
+    background: #222;
+    border-radius: 20px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Bottom Navigation Bar (Dock) */
+.nav-bar {
+    display: flex;
+    width: 430px;
+    height: 91px;
+    padding: 8px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #FFF;
+}
+
+.nav-item {
+    font-size: 32px;
+    padding: 10px;
+}

@@ -1,0 +1,465 @@
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+  html, body {
+    margin: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+
+
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    width: 393px;
+    height: 59px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-shrink: 0;
+    background: transparent; /* Clear background */
+    position: sticky;
+    top: 0; /* Sticks to the top of the page */
+    z-index: 1000; /* Ensures it stays above other content */
+    background-color: var(--primitives-color-neutral-100); /* Match background */
+    padding: 10px 20px;
+}
+
+/* Dynamic Island */
+.dynamic-island {
+    width: 100px;
+    height: 30px;
+    background: #222;
+    border-radius: 20px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin-top: 00px;
+    position: relative;
+    background-color: var(--primitives-color-neutral-100);
+    height: auto;
+    min-height: 100vh; /* Ensure it fits the viewport */
+    box-sizing: border-box;
+}
+
+.login .welcome {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 90px;
+    padding-left: 0px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--header-1-bold-font-family);
+    font-weight: var(--header-1-bold-font-weight);
+    color: #000000;
+    font-size: var(--header-1-bold-font-size);
+    letter-spacing: var(--header-1-bold-letter-spacing);
+    line-height: var(--header-1-bold-line-height);
+    white-space: nowrap;
+    font-style: var(--header-1-bold-font-style);
+}
+
+.login .experience-options {
+    width: 191px;
+    align-items: flex-start;
+    gap: 27px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login .choose-role {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--header-3-medium-font-family);
+    font-weight: var(--header-3-medium-font-weight);
+    color: #000000;
+    font-size: var(--header-3-medium-font-size);
+    letter-spacing: var(--header-3-medium-letter-spacing);
+    line-height: var(--header-3-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--header-3-medium-font-style);
+}
+
+.login .experience-options {
+    width: 143px;
+    align-items: flex-end;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login .div-2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+
+.login .text-wrapper-2 {
+    position: relative;
+    width: 75px;
+    margin-top: -1.00px;
+    font-family: var(--header-3-medium-font-family);
+    font-weight: var(--header-3-medium-font-weight);
+    color: var(--primitives-color-neutral-900);
+    font-size: var(--header-3-medium-font-size);
+    letter-spacing: var(--header-3-medium-letter-spacing);
+    line-height: var(--header-3-medium-line-height);
+    font-style: var(--header-3-medium-font-style);
+}
+
+.sex {
+    font-family: var(--header-3-medium-font-family);
+    font-weight: var(--header-3-medium-font-weight);
+    color: var(--primitives-color-neutral-900);
+    font-size: var(--header-3-medium-font-size);
+    letter-spacing: var(--header-3-medium-letter-spacing);
+    line-height: var(--header-3-medium-line-height);
+    font-style: var(--header-3-medium-font-style);
+}
+
+
+/* Radio button */
+.login .radio-button {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    border: 1px solid;
+    border-color: var(--primitives-color-neutral-900);
+}
+
+
+.radio-button {
+    appearance: none; /* Removes default styling */
+    max-width: 18px;
+    max-height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--primitives-color-neutral-900);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-button:checked {
+    background-color: var(--primitives-color-primary-500);
+
+}
+
+input[type="radio"] {
+    position: relative;
+    max-width: 18px;  /* Size of the radio button */
+    max-height: 18px;
+    border: 2px solid var(--primitives-color-neutral-900);
+    border-radius: 50%; /* Make the radio button circular */
+    background-color: #fff; /* Background of the radio button */
+    cursor: pointer;
+    appearance: none; /* Removes the default styling */
+  }
+  
+  input[type="radio"]:checked {
+    background-color: white
+    border color var(--primitives-color-neutral-900);
+  }
+  
+  input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 2px;  /* Position it inside the radio button */
+    left: 2px;
+    width: 12px; /* Size of the inner circle */
+    height: 12px;
+    border-radius: 50%; /* Make the inner circle round */
+    background-color: var(--primitives-color-primary-500); /* inner circle color */
+  }
+  /* Optional: Focus Outline for Accessibility */
+.radio-button:focus {
+    outline: 2px solid var(--primitives-color-primary-500);
+}
+
+
+
+
+/* get started button */
+
+.login .primary-small-button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 16px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--primitives-color-primary-500);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.login .small-button {
+    all: unset;
+    box-sizing: border-box;
+    position: relative;
+    flex: 1;
+    font-family: var(--paragraph-1-medium-font-family);
+    font-weight: var(--paragraph-1-medium-font-weight);
+    color: var(--primitives-color-neutral-900);
+    font-size: var(--paragraph-1-medium-font-size);
+    text-align: center;
+    letter-spacing: var(--paragraph-1-medium-letter-spacing);
+    line-height: var(--paragraph-1-medium-line-height);
+    font-style: var(--paragraph-1-medium-font-style);
+}
+
+.primary-small-button {
+    font-family: var(--paragraph-1-medium-font-family);
+    font-weight: var(--paragraph-1-medium-font-weight);
+    font-size: var(--paragraph-1-medium-font-size);
+    letter-spacing: var(--paragraph-1-medium-letter-spacing);
+    line-height: var(--paragraph-1-medium-line-height);
+    font-style: var(--paragraph-1-medium-font-style);
+    color: var(--primitives-color-neutral-900);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px; /* Adjust spacing as needed */
+}
+
+
+
+
+/* Questions div */
+
+
+.questions {
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    gap: 60px; /* Adjust this value to control spacing */
+    
+}
+
+/* age question */
+.age-options {
+    width: 100%;
+    align-items: flex-end;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.text-wrapper-range {
+    position: relative;
+    width: 100%;
+    margin-top: -1.00px;
+    font-family: var(--header-3-medium-font-family);
+    font-weight: var(--header-3-medium-font-weight);
+    color: var(--primitives-color-neutral-900);
+    font-size: var(--header-3-medium-font-size);
+    letter-spacing: var(--header-3-medium-letter-spacing);
+    line-height: var(--header-3-medium-line-height);
+    font-style: var(--header-3-medium-font-style);
+}
+
+/* height question */
+
+.height-options {
+    width: 100%;
+    align-items: flex-end;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+
+
+.choose-role {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 27px;
+    padding: 10px;
+    position: relative;
+}
+
+.choose-role .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--header-3-medium-font-family);
+    font-weight: var(--header-3-medium-font-weight);
+    color: var(--primitives-color-neutral-900);
+    font-size: var(--header-3-medium-font-size);
+    letter-spacing: var(--header-3-medium-letter-spacing);
+    line-height: var(--header-3-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--header-3-medium-font-style);
+}
+
+.choose-role .days-of-the-week {
+    width: 100%;
+    align-items: flex-end;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.choose-role .div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.choose-role .square-button {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: var(--primitives-color-neutral-900);
+}
+
+
+
+
+/* Checkbox Styling - Match Radio Button Style */
+.square-button {
+    appearance: none;
+    width: 18px; /* Match the size of radio buttons */
+    height: 18px;
+    border-radius: 3px; /* Keep square shape */
+    border: 2px solid var(--primitives-color-neutral-900);
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Checkbox Checked State - Add Inner Square */
+.square-button:checked {
+    background-color:transparent;
+    border-color: var(--primitives-color-neutral-900);
+}
+
+/* Inner Square when Checked */
+.square-button:checked::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px; /* Size of the inner square */
+    height: 14px;
+    background-color: var(--primitives-color-primary-500);
+    border-radius: 2px; /* Keep square shape */
+}
+
+/* Optional: Focus Outline for Accessibility */
+.square-button:focus {
+    outline: 2px solid var(--primitives-color-primary-500);
+}
+
+
+
+
+
+
+/* Ensure the link looks like the button */
+.primary-small-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: var(--primitives-color-primary-500);
+    color: var(--primitives-color-neutral-900);
+    border-radius: 20px;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    font-family: var(--paragraph-1-medium-font-family);
+    font-size: var(--paragraph-1-medium-font-size);
+}
+
+/* Hover effect (optional) */
+.primary-small-button:hover {
+    background-color: var(--primitives-color-primary-600);
+}
+
+
+
+/* Bottom Navigation Bar (Dock) */
+.nav-bar {
+    display: flex;
+    width: 430px;
+    height: 91px;
+    padding: 8px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #FFF;
+}
