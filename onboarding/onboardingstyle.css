@@ -428,11 +428,6 @@ input[type="radio"] {
     outline: 2px solid var(--primitives-color-primary-500);
 }
 
-
-
-
-
-
 /* Ensure the link looks like the button */
 .primary-small-button {
     display: inline-flex;
@@ -448,8 +443,16 @@ input[type="radio"] {
     font-size: var(--paragraph-1-medium-font-size);
 }
 
-/* Hover effect (optional) */
 .primary-small-button:hover {
     background-color: var(--primitives-color-primary-600);
+}
+
+.div.question, .text-wrapper.question {
+    font-weight: 600;
+    margin-top: 10px
+}
+
+#starter-question {
+    font-weight: 600;
 }
 
