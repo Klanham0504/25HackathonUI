@@ -449,7 +449,7 @@ input[type="radio"] {
 
 .div.question, .text-wrapper.question {
     font-weight: 600;
-    margin-top: 10px
+    margin-top: 45px;
 }
 
 #starter-question {

@@ -67,11 +67,12 @@
     <div class=questions>
         <div class="experience">
             <div class="choose-role">
-                <div class="div" id="starter-question">Choose your role</div>
+                <div class="div" id="starter-question">Which describes you best?</div>
             </div>
             <div class="experience-options">
                 <label class="div-2">
-                    <input type="radio" name="role" value="coach" class="radio-button">
+                    <input type="radio" name="role" value="coach" class="radio-button"
+                           onclick="toggleAthleteQuestions()">
                     <span class="text-wrapper-2">Coach</span>
                 </label>
                 <label class="div-2">
@@ -80,7 +81,8 @@
                     <span class="text-wrapper-2">Athlete</span>
                 </label>
                 <label class="div-2">
-                    <input type="radio" name="role" value="fan" class="radio-button">
+                    <input type="radio" name="role" value="fan" class="radio-button"
+                            onclick="toggleAthleteQuestions()">
                     <span class="text-wrapper-2">Fan</span>
                 </label>
             </div>
@@ -205,6 +207,7 @@
                 function toggleAthleteQuestions() {
                     const athleteRadioButton = document.querySelector('input[name="role"][value="athlete"]');
                     const athleteQuestions = document.getElementById('athlete-questions');
+                    console.log("athlete checked? ", athleteRadioButton.checked);
                     athleteQuestions.style.display = athleteRadioButton.checked ? 'block' : 'none';
                 }
             </script>
