@@ -1,0 +1,167 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Add top padding so content isn't hidden behind the image
+     Adjust this to match your status bar image height */
+  padding-top: 44px;
+  background-color: #FFFFFF;
+  color: #333;
+}
+
+/* 
+   FIXED STATUS BAR 
+   - Stays at the top of the screen at all times
+*/
+.status-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Remove or change the fixed height if you want a flexible height */
+  /* height: 59px; */
+  
+  width: 393px; /* or 100% if you want full browser width */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: white;
+
+  /* Add extra top/bottom padding here: */
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* Keep the Dynamic Island pinned in the right spot */
+.dynamic-island {
+  position: absolute;
+  /* Adjust 'top' if you need it higher or lower within the bar */
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 30px;
+  background: #222;
+  border-radius: 20px;
+}
+
+
+/* Your main content can be styled however you like */
+.content {
+  /* If needed, you can add more spacing or layout rules here */
+  padding: 1rem;
+}
+
+/* HEADER */
+.header {
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.month {
+  margin-top: 3.5rem;  /* Adds extra space above the header */
+  padding-left: 3.5rem; 
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* CALENDAR CONTAINER */
+.calendar-container {
+  display: flex;
+  overflow-x: auto; /* Horizontal scroll */
+  padding: 1rem;
+  padding-bottom: 5rem; /* Give space for bottom nav */
+  scroll-snap-type: x mandatory; /* Snap scrolling (optional) */
+}
+
+/* Each Day Column */
+.day-column {
+  min-width: 280px; /* or 100vw if you want full-screen columns */
+  margin-right: 1rem;
+  scroll-snap-align: start; /* Snap to each column (optional) */
+}
+
+/* Day Header */
+.day-header {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* Time Slot Layout */
+.time-slot {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2px;
+  min-height: 50px;
+  padding-left: 1rem;
+}
+
+/* Time Label */
+.time {
+  width: 50px;
+  font-weight: bold;
+  color: #999;
+}
+
+
+
+/* Event Box */
+.event {
+  flex: 1;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #ffffff; /* default background if not overridden */
+}
+.sub {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* BOTTOM NAVIGATION */
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon container and image styling */
+.icon img {
+  width: 24px;     /* Adjust as needed */
+  height: 24px;    /* Adjust as needed */
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+/* Active link styling */
+.nav-link.active {
+  color: #FFC629;
+  font-weight: bold;
+}
+

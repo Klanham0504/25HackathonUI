@@ -6,11 +6,11 @@
 
 
   html, body {
-    margin: 0px;
+    margin-top: 30px;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -24,7 +24,7 @@
     align-items: flex-end;
     flex-shrink: 0;
     background: transparent; /* Clear background */
-    position: sticky;
+    position: fixed;
     top: 0; /* Sticks to the top of the page */
     z-index: 1000; /* Ensures it stays above other content */
     background-color: var(--primitives-color-neutral-100); /* Match background */
@@ -49,10 +49,10 @@
 .login {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    padding: 20px 10px;
-    margin-top: 00px;
+    padding: 10px 10px;
+    margin-left: 30px;
     position: relative;
     background-color: var(--primitives-color-neutral-100);
     height: auto;
@@ -97,7 +97,8 @@
 
 .login .choose-role {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: left;
     gap: 10px;
     padding: 10px;
@@ -276,8 +277,9 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
     width: 100%;
-    margin-top: 100px; /* Adjust spacing as needed */
+    margin-top: 40px; /* Adjust spacing as needed */
 }
 
 
@@ -335,10 +337,11 @@ input[type="radio"] {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: left;
     gap: 27px;
     padding: 10px;
     position: relative;
+    width: 100%;
 }
 
 .choose-role .text-wrapper {
@@ -450,16 +453,3 @@ input[type="radio"] {
     background-color: var(--primitives-color-primary-600);
 }
 
-
-
-/* Bottom Navigation Bar (Dock) */
-.nav-bar {
-    display: flex;
-    width: 430px;
-    height: 91px;
-    padding: 8px 16px;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    background: #FFF;
-}
